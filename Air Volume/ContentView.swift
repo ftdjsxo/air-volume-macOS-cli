@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject private var windowCoordinator: MainWindowCoordinator
+    @Environment(\.openWindow) private var openWindow
     @StateObject private var service = AirVolumeService()
 
     var body: some View {
@@ -63,6 +65,12 @@ struct ContentView: View {
         .padding(24)
         .frame(minWidth: 360, minHeight: 480)
         .background(Color(nsColor: NSColor.windowBackgroundColor))
+        .onAppear {
+            windowCoordinator.register(openWindow: openWindow)
+            DispatchQueue.main.async {
+                windowCoordinator.captureCurrentWindow()
+            }
+        }
     }
 }
 
