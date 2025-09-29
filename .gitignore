@@ -1,0 +1,41 @@
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode
+build/
+DerivedData/
+*.xccheckout
+*.xcscmblueprint
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.moved-aside
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Swift Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# CocoaPods / Carthage (non usati ora, ma ignorati se introdotti)
+Pods/
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Logs e cache temporanei
+*.log
+*.orig
+*.swp
+*.tmp
