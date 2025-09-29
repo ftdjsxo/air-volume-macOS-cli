@@ -29,7 +29,7 @@ I dispositivi devono rispondere a broadcast UDP su `255.255.255.255:4210` invian
 {
   "service": "airvol",
   "type": "announce",
-  "name": "Studio Speaker",
+  "name": "Air Volume",
   "ip": "192.168.1.120",
   "ws_port": 81,
   "ws_path": "/ws"
